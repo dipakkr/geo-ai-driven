@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="mx-auto max-w-5xl">
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div>
-            <a href="/" className="font-['Syne'] text-lg font-extrabold text-foreground">
+            <a href="/" className="text-lg font-bold text-foreground">
               GEO<span className="text-primary">.</span>AI
             </a>
             <p className="mt-1 text-xs text-muted-foreground">Your business, recommended by AI.</p>

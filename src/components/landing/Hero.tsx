@@ -15,16 +15,16 @@ const Hero = () => {
         </div>
 
         {/* H1 */}
-        <h1 className="mb-6 text-4xl leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <span className="text-stroke block">More inbound leads.</span>
+        <h1 className="mb-6 text-4xl leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <span className="block text-muted-foreground font-medium">More inbound leads.</span>
           <span className="block text-foreground">
             From the AI searches your customers are already making.
           </span>
         </h1>
 
         {/* Subheadline */}
-        <p className="mx-auto mb-10 max-w-2xl text-base text-muted-foreground sm:text-lg animate-fade-in" style={{ animationDelay: "0.2s", fontWeight: 300 }}>
-          GEO AI deploys 8 specialized agents that work 24/7 to make your business the answer on ChatGPT, Perplexity, Gemini, and Google. More visibility, more traffic, more leads&nbsp;-- on autopilot.
+        <p className="mx-auto mb-10 max-w-2xl text-base text-muted-foreground sm:text-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          GEO AI deploys 8 specialized agents that work 24/7 to make your business the answer on ChatGPT, Perplexity, Gemini, and Google. More visibility, more traffic, more leads -- on autopilot.
         </p>
 
         {/* CTA row */}

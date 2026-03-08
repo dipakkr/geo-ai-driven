@@ -6,7 +6,6 @@ const navLinks = [
   { label: "How it Works", href: "#how-it-works" },
   { label: "Agents", href: "#agents" },
   { label: "Pricing", href: "#pricing" },
-  { label: "For Investors", href: "#investors" },
 ];
 
 const Navbar = () => {
@@ -15,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/" className="flex items-center gap-1 font-['Syne'] text-xl font-extrabold tracking-tight text-foreground">
+        <a href="/" className="flex items-center gap-1 text-xl font-bold tracking-tight text-foreground">
           GEO<span className="text-primary">.</span>AI
         </a>
 

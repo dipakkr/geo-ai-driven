@@ -4,43 +4,43 @@
 
 @layer base {
   :root {
-    --background: 230 40% 3.1%;
-    --foreground: 240 33% 95.5%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 230 30% 6%;
-    --card-foreground: 240 33% 95.5%;
+    --card: 0 0% 98%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 230 30% 6%;
-    --popover-foreground: 240 33% 95.5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
     --primary: 220 91% 54%;
-    --primary-foreground: 240 33% 97%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 230 25% 12%;
-    --secondary-foreground: 240 33% 95.5%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 230 20% 14%;
-    --muted-foreground: 230 10% 55%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
     --accent: 220 91% 54%;
-    --accent-foreground: 240 33% 97%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 230 20% 14%;
-    --input: 230 20% 14%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 220 91% 54%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 230 40% 3.1%;
-    --sidebar-foreground: 240 33% 95.5%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
     --sidebar-primary: 220 91% 54%;
-    --sidebar-primary-foreground: 240 33% 97%;
-    --sidebar-accent: 230 25% 12%;
-    --sidebar-accent-foreground: 240 33% 95.5%;
-    --sidebar-border: 230 20% 14%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
     --sidebar-ring: 220 91% 54%;
   }
 
@@ -82,14 +82,14 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    letter-spacing: -0.03em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -97,6 +97,14 @@
   .text-stroke {
     -webkit-text-stroke: 1.5px hsl(var(--foreground));
     color: transparent;
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 20px hsl(220 91% 54% / 0.2), 0 0 40px hsl(220 91% 54% / 0.08);
+  }
+
+  .glow-blue-sm {
+    box-shadow: 0 0 10px hsl(220 91% 54% / 0.12);
   }
 
   .glow-blue {
