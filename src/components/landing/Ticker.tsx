@@ -7,18 +7,18 @@ const items = [
 ];
 
 const Ticker = () => {
-  const doubled = [...items, ...items];
+  const tripled = [...items, ...items, ...items];
 
   return (
-    <div className="overflow-hidden border-y border-border/50 bg-secondary/30 py-4">
-      <div className="animate-ticker flex w-max gap-12">
-        {doubled.map((item, i) => (
+    <div className="overflow-hidden border-y border-border/50 bg-card/50 py-4 glass">
+      <div className="animate-ticker flex w-max gap-10">
+        {tripled.map((item, i) => (
           <span
             key={i}
-            className="whitespace-nowrap text-sm text-muted-foreground"
+            className="flex items-center gap-10 whitespace-nowrap text-sm font-medium text-muted-foreground/70"
           >
             {item}
-            <span className="ml-12 text-primary/40">·</span>
+            <span className="inline-block h-1 w-1 rounded-full bg-primary/40" />
           </span>
         ))}
       </div>
