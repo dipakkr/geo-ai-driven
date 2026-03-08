@@ -15,8 +15,8 @@ const Hero = () => {
         </div>
 
         {/* H1 */}
-        <h1 className="mb-6 text-4xl leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <span className="text-stroke block">More inbound leads.</span>
+        <h1 className="mb-6 text-4xl leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <span className="block text-muted-foreground font-medium">More inbound leads.</span>
           <span className="block text-foreground">
             From the AI searches your customers are already making.
           </span>
