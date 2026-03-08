@@ -1,27 +1,20 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Plug, Rocket, TrendingUp } from "lucide-react";
 
 const steps = [
   {
     num: "01",
-    icon: Plug,
     title: "Connect",
-    desc: "Tell GEO AI about your business. Upload content, describe your customers, share your URL. Cortex builds your profile in minutes.",
-    accent: "from-blue-500 to-cyan-500",
+    desc: "Tell GEO AI about your business. Upload your existing content, describe your customers, share your website URL. Cortex ingests everything and builds your business profile in minutes.",
   },
   {
     num: "02",
-    icon: Rocket,
     title: "Deploy",
-    desc: "All 8 agents activate. Scout finds opportunities. Blueprint plans. Forge creates. Signal publishes, fully optimized for AI crawlers.",
-    accent: "from-violet-500 to-purple-500",
+    desc: "All 8 agents activate. Scout finds your opportunities. Blueprint builds your content plan. Forge writes and designs your pages. Signal publishes them, fully optimized for AI crawlers.",
   },
   {
     num: "03",
-    icon: TrendingUp,
     title: "Compound",
-    desc: "Pulse monitors everything. Agents rewrite underperformers, double down on winners, and adapt to changes automatically. Every week gets stronger.",
-    accent: "from-emerald-500 to-green-500",
+    desc: "Pulse monitors everything. Agents rewrite underperformers, double down on winners, and adapt to algorithm changes automatically. Your AI search presence gets stronger every single week.",
   },
 ];
 
@@ -31,35 +24,29 @@ const HowItWorks = () => {
   return (
     <section id="how-it-works" ref={ref} className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-16 text-center">
-          <span className="mb-5 inline-flex items-center rounded-full border border-primary/15 bg-card px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-primary shadow-sm glass glass-border">
-            How It Works
-          </span>
-          <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl">
-            Up and running in <span className="text-gradient-blue">3 steps.</span>
-          </h2>
-        </div>
+        <span className="mb-4 block text-xs font-medium uppercase tracking-widest text-primary">
+          How It Works
+        </span>
+        <h2 className="mb-14 text-3xl sm:text-4xl md:text-5xl">
+          Up and running in 3 steps.
+        </h2>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {steps.map((step, i) => {
-            const Icon = step.icon;
-            return (
-              <div
-                key={step.num}
-                className={`group relative overflow-hidden rounded-2xl bg-card p-8 glass glass-border card-hover noise ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-                }`}
-                style={{ transitionDelay: `${i * 150}ms`, transitionDuration: "600ms" }}
-              >
-                <div className={`mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${step.accent} text-white shadow-lg transition-transform duration-300 group-hover:scale-110`}>
-                  <Icon className="h-5 w-5" />
-                </div>
-                <span className="mb-2 block text-xs font-bold tracking-wider text-muted-foreground/40">STEP {step.num}</span>
-                <h3 className="mb-3 text-xl font-bold tracking-tight">{step.title}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
-              </div>
-            );
-          })}
+        <div className="grid gap-8 md:grid-cols-3">
+          {steps.map((step, i) => (
+            <div
+              key={step.num}
+              className={`transition-all duration-500 ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+              }`}
+              style={{ transitionDelay: `${i * 150}ms` }}
+            >
+              <span className="mb-4 inline-block text-4xl font-bold text-primary/20">
+                {step.num}
+              </span>
+              <h3 className="mb-3 text-xl font-bold">{step.title}</h3>
+              <p className="text-sm text-muted-foreground" style={{ fontWeight: 300 }}>{step.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
