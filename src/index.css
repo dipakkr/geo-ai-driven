@@ -100,6 +100,14 @@
   }
 
   .glow-blue {
+    box-shadow: 0 0 20px hsl(220 91% 54% / 0.2), 0 0 40px hsl(220 91% 54% / 0.08);
+  }
+
+  .glow-blue-sm {
+    box-shadow: 0 0 10px hsl(220 91% 54% / 0.12);
+  }
+
+  .glow-blue {
     box-shadow: 0 0 30px hsl(220 91% 54% / 0.3), 0 0 60px hsl(220 91% 54% / 0.1);
   }
 

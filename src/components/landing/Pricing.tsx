@@ -73,7 +73,7 @@ const Pricing = () => {
               )}
               <h3 className="mb-1 text-xl font-bold">{tier.name}</h3>
               <div className="mb-6">
-                <span className="text-4xl font-extrabold font-['Syne']">{tier.price}</span>
+                <span className="text-4xl font-bold">{tier.price}</span>
                 <span className="text-sm text-muted-foreground">/mo</span>
               </div>
               <ul className="mb-8 flex-1 space-y-3">

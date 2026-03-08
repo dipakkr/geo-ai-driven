@@ -40,7 +40,7 @@ const HowItWorks = () => {
               }`}
               style={{ transitionDelay: `${i * 150}ms` }}
             >
-              <span className="mb-4 inline-block font-['Syne'] text-4xl font-extrabold text-primary/20">
+              <span className="mb-4 inline-block text-4xl font-bold text-primary/20">
                 {step.num}
               </span>
               <h3 className="mb-3 text-xl font-bold">{step.title}</h3>

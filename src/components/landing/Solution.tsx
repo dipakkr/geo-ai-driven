@@ -30,7 +30,7 @@ const Solution = () => {
             {nodes.map((node, i) => (
               <div key={node} className="flex items-center gap-2 sm:gap-3">
                 <div
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/30 bg-primary/10 text-xs font-medium text-primary animate-node-light sm:h-12 sm:w-auto sm:px-4"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/30 bg-primary/10 text-xs font-medium text-primary sm:h-12 sm:w-auto sm:px-4"
                   style={{ animationDelay: `${i * 0.3}s` }}
                 >
                   {node}

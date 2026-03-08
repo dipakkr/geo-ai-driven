@@ -23,8 +23,8 @@ const Hero = () => {
         </h1>
 
         {/* Subheadline */}
-        <p className="mx-auto mb-10 max-w-2xl text-base text-muted-foreground sm:text-lg animate-fade-in" style={{ animationDelay: "0.2s", fontWeight: 300 }}>
-          GEO AI deploys 8 specialized agents that work 24/7 to make your business the answer on ChatGPT, Perplexity, Gemini, and Google. More visibility, more traffic, more leads&nbsp;-- on autopilot.
+        <p className="mx-auto mb-10 max-w-2xl text-base text-muted-foreground sm:text-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          GEO AI deploys 8 specialized agents that work 24/7 to make your business the answer on ChatGPT, Perplexity, Gemini, and Google. More visibility, more traffic, more leads -- on autopilot.
         </p>
 
         {/* CTA row */}

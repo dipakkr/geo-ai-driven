@@ -7,9 +7,7 @@ import Agents from "@/components/landing/Agents";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Comparison from "@/components/landing/Comparison";
 import Pricing from "@/components/landing/Pricing";
-
-import FinalCTA from "@/components/landing/FinalCTA";
-import Footer from "@/components/landing/Footer";
+ooter from "@/components/landing/Footer";
 
 const Index = () => {
   return (
@@ -26,8 +24,4 @@ const Index = () => {
       <InvestorStrip />
       <FinalCTA />
       <Footer />
-    </div>
-  );
-};
-
-export default Index;
+    </div default Index;
