@@ -1,7 +1,14 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const nodes = [
-  "Cortex", "Scout", "Blueprint", "Forge", "Rival", "Signal", "Anchor", "Pulse"
+  { name: "Cortex", color: "from-violet-500 to-purple-600" },
+  { name: "Scout", color: "from-emerald-500 to-green-600" },
+  { name: "Blueprint", color: "from-blue-500 to-cyan-600" },
+  { name: "Forge", color: "from-amber-500 to-orange-600" },
+  { name: "Rival", color: "from-rose-500 to-red-600" },
+  { name: "Signal", color: "from-cyan-500 to-teal-600" },
+  { name: "Anchor", color: "from-indigo-500 to-blue-600" },
+  { name: "Pulse", color: "from-orange-500 to-amber-600" },
 ];
 
 const Solution = () => {
@@ -10,33 +17,35 @@ const Solution = () => {
   return (
     <section ref={ref} className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-5xl">
-        <span className="mb-4 block text-xs font-medium uppercase tracking-widest text-primary">
-          The Solution
-        </span>
-        <h2 className="mb-6 text-3xl sm:text-4xl md:text-5xl">
-          One platform. Eight agents working while you sleep.
-        </h2>
-        <p className="mb-14 max-w-3xl text-base text-muted-foreground" style={{ fontWeight: 300 }}>
-          GEO AI deploys a fleet of specialized agents, each one owning a different job. Together they build, optimize, publish, and monitor your AI search presence automatically. Set it up once. Let it compound.
-        </p>
+        <div className="mb-16 text-center">
+          <span className="mb-5 inline-flex items-center rounded-full border border-primary/15 bg-card px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-primary shadow-sm glass glass-border">
+            The Solution
+          </span>
+          <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl">
+            One platform. <span className="text-gradient-blue">Eight agents.</span>
+          </h2>
+          <p className="mx-auto mt-5 max-w-xl text-base text-muted-foreground leading-relaxed">
+            Together they build, optimize, publish, and monitor your AI search presence. Set it up once. Let it compound.
+          </p>
+        </div>
 
-        {/* Pipeline diagram */}
+        {/* Pipeline */}
         <div
-          className={`rounded-xl border border-border bg-card p-6 sm:p-10 transition-all duration-700 ${
+          className={`rounded-2xl bg-card p-8 sm:p-12 glass glass-border noise transition-all duration-700 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-0 sm:justify-between">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             {nodes.map((node, i) => (
-              <div key={node} className="flex items-center gap-2 sm:gap-3">
+              <div key={node.name} className="flex items-center gap-3">
                 <div
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/30 bg-primary/10 text-xs font-medium text-primary sm:h-12 sm:w-auto sm:px-4"
-                  style={{ animationDelay: `${i * 0.3}s` }}
+                  className={`flex h-11 items-center justify-center rounded-full bg-gradient-to-r ${node.color} px-5 text-xs font-bold text-white shadow-md transition-transform duration-300 hover:scale-105 animate-float`}
+                  style={{ animationDelay: `${i * 0.4}s` }}
                 >
-                  {node}
+                  {node.name}
                 </div>
                 {i < nodes.length - 1 && (
-                  <div className="hidden h-px w-6 bg-gradient-to-r from-primary/50 to-primary/10 sm:block" />
+                  <div className="hidden h-px w-4 bg-border sm:block" />
                 )}
               </div>
             ))}
