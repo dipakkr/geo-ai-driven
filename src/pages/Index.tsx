@@ -7,7 +7,7 @@ import Agents from "@/components/landing/Agents";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Comparison from "@/components/landing/Comparison";
 import Pricing from "@/components/landing/Pricing";
-import InvestorStrip from "@/components/landing/InvestorStrip";
+
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
