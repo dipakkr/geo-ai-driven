@@ -1,0 +1,24 @@
+# GEO AI
+
+> Your business, recommended by AI.
+
+GEO AI deploys 8 specialized agents that work 24/7 to make your business the answer on ChatGPT, Perplexity, Gemini, and Google.
+
+## Agents
+- Cortex: Business Intelligence Agent
+- Scout: Demand Intelligence Agent
+- Blueprint: Content Strategy Agent
+- Forge: Content and Design Agent
+- Rival: Competitive Intelligence Agent
+- Signal: Publishing and Indexing Agent
+- Anchor: Authority and Citation Agent
+- Pulse: Performance Agent
+
+## Pricing
+- Starter: $499/mo
+- Growth: $999/mo
+- Scale: $2,499/mo
+
+## Links
+- Homepage: https://geoai.com
+- Signup: https://geoai.com/signup
