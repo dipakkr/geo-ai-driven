@@ -76,13 +76,13 @@ const Agents = () => {
             return (
               <div
                 key={agent.name}
-                className={`group relative rounded-2xl border border-border/80 bg-card p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20 ${
+                className={`group relative rounded-3xl border border-white/20 dark:border-white/5 bg-card/40 backdrop-blur-xl p-7 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(37,99,235,0.12)] hover:border-blue-500/30 overflow-hidden ${
                   isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                 }`}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 {/* Gradient accent top */}
-                <div className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${agent.color} opacity-0 transition-opacity duration-300 group-hover:opacity-100`} />
+                <div className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${agent.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
 
                 <div className="mb-4 flex items-center justify-between">
                   <div className={`flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br ${agent.color} ${agent.iconColor} transition-transform duration-300 group-hover:scale-110`}>

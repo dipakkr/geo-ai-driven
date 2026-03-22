@@ -6,9 +6,9 @@ const Hero = () => {
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24 pb-16">
       {/* Gradient mesh background */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute top-0 left-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-primary/8 blur-[150px]" />
-        <div className="absolute bottom-0 right-0 h-[400px] w-[400px] translate-x-1/4 rounded-full bg-primary/5 blur-[100px]" />
-        <div className="absolute top-1/2 left-0 h-[300px] w-[300px] -translate-x-1/4 rounded-full bg-primary/4 blur-[80px]" />
+        <div className="absolute top-0 left-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-blue-500/10 blur-[120px] animate-glow-pulse" />
+        <div className="absolute bottom-0 right-0 h-[400px] w-[400px] translate-x-1/4 rounded-full bg-indigo-500/10 blur-[100px] animate-glow-pulse" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/2 left-0 h-[300px] w-[300px] -translate-x-1/4 rounded-full bg-blue-400/10 blur-[80px] animate-glow-pulse" style={{ animationDelay: "2s" }} />
       </div>
 
       {/* Subtle grid pattern */}
@@ -22,18 +22,18 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto max-w-5xl text-center">
         {/* Eyebrow */}
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-5 py-2 text-sm font-medium text-primary animate-fade-in backdrop-blur-sm">
+        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-5 py-2 text-sm font-medium text-blue-600 dark:text-blue-400 animate-fade-in backdrop-blur-sm shadow-[0_0_15px_rgba(37,99,235,0.15)]">
           <Sparkles className="h-3.5 w-3.5" />
           The AI Search Revolution Is Here
         </div>
 
         {/* H1 */}
-        <h1 className="mb-6 text-4xl leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-[4.5rem] animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <span className="block text-muted-foreground/70 font-medium">More inbound leads.</span>
+        <h1 className="mb-6 text-4xl leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-[4.5rem] animate-fade-in font-extrabold" style={{ animationDelay: "0.1s" }}>
+          <span className="block text-muted-foreground/80 font-semibold mb-2">More inbound leads.</span>
           <span className="block bg-gradient-to-br from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent">
             From the AI searches your
           </span>
-          <span className="block bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent drop-shadow-sm">
             customers are already making.
           </span>
         </h1>
@@ -46,14 +46,14 @@ const Hero = () => {
 
         {/* CTA row */}
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <Button asChild size="lg" className="group rounded-full px-8 text-base shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:scale-[1.02]">
-            <a href="/signup">
-              Start for Free <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          <Button asChild size="lg" className="group rounded-full px-8 h-12 text-base shadow-[0_0_20px_rgba(37,99,235,0.4)] bg-gradient-to-r from-blue-600 to-indigo-600 text-white transition-all duration-300 hover:shadow-[0_0_35px_rgba(37,99,235,0.6)] hover:scale-[1.02] border border-blue-500/50">
+            <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">
+              Book a Demo <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </Button>
           <a
             href="#how-it-works"
-            className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            className="inline-flex h-12 px-6 items-center justify-center gap-2 rounded-full text-sm font-medium text-muted-foreground transition-all hover:text-foreground hover:bg-secondary/50 border border-transparent hover:border-border"
           >
             See how it works <ChevronDown className="h-4 w-4" />
           </a>
@@ -61,9 +61,9 @@ const Hero = () => {
       </div>
 
       {/* Flow diagram */}
-      <div className="relative z-10 mx-auto mt-20 w-full max-w-3xl animate-fade-in" style={{ animationDelay: "0.5s" }}>
-        <div className="rounded-2xl border border-border/80 bg-card/60 p-8 shadow-xl shadow-primary/5 backdrop-blur-md sm:p-12">
-          <p className="mb-6 text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">How it works</p>
+      <div className="relative z-10 mx-auto mt-20 w-full max-w-4xl animate-fade-in" style={{ animationDelay: "0.5s" }}>
+        <div className="rounded-2xl border border-white/10 bg-card/40 p-8 shadow-2xl shadow-blue-900/5 backdrop-blur-xl sm:p-12">
+          <p className="mb-8 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">How it works</p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-0 sm:justify-between">
             {[
               { icon: "💬", label: "Buyer asks ChatGPT" },

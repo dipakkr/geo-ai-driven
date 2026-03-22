@@ -59,15 +59,15 @@ const Pricing = () => {
           {tiers.map((tier, i) => (
             <div
               key={tier.name}
-              className={`relative flex flex-col rounded-xl border p-6 transition-all duration-500 hover:-translate-y-1 ${
+              className={`relative flex flex-col rounded-3xl border p-8 transition-all duration-500 hover:-translate-y-2 ${
                 tier.popular
-                  ? "border-primary bg-primary/5 glow-blue-sm"
-                  : "border-border bg-card"
+                  ? "border-blue-500 bg-blue-500/5 shadow-[0_0_30px_rgba(37,99,235,0.15)] ring-1 ring-blue-500/50"
+                  : "border-white/10 dark:border-white/5 bg-card/40 backdrop-blur-xl shadow-xl shadow-blue-900/5"
               } ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
               style={{ transitionDelay: `${i * 120}ms` }}
             >
               {tier.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-1.5 text-xs font-semibold tracking-wide text-white shadow-lg shadow-blue-500/30">
                   Most Popular
                 </span>
               )}
@@ -87,10 +87,14 @@ const Pricing = () => {
               <Button
                 asChild
                 variant={tier.popular ? "default" : "outline"}
-                className="w-full rounded-full"
+                className={`w-full rounded-full h-12 text-base font-medium transition-all duration-300 ${
+                  tier.popular 
+                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] text-white border-0 hover:scale-[1.02]" 
+                  : "border-white/10 hover:bg-secondary/50 dark:border-white/5"
+                }`}
               >
-                <a href="/signup">
-                  Get Started <ArrowRight className="ml-1 h-4 w-4" />
+                <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">
+                  Book a Demo <ArrowRight className="ml-1 h-4 w-4" />
                 </a>
               </Button>
             </div>

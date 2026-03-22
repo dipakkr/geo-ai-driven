@@ -31,8 +31,8 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button asChild className="rounded-full px-6">
-            <a href="/signup">Get Early Access</a>
+          <Button asChild className="rounded-full px-6 bg-blue-600 hover:bg-blue-700 text-white shadow-[0_0_15px_rgba(37,99,235,0.3)] transition-all hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]">
+            <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">Book a Demo</a>
           </Button>
         </div>
 
@@ -58,8 +58,8 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button asChild className="mt-2 w-full rounded-full">
-              <a href="/signup">Get Early Access</a>
+            <Button asChild className="mt-2 w-full rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-[0_0_15px_rgba(37,99,235,0.3)]">
+              <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">Book a Demo</a>
             </Button>
           </div>
         </div>

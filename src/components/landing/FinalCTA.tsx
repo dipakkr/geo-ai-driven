@@ -18,13 +18,13 @@ const FinalCTA = () => {
         <p className="mb-10 text-base text-muted-foreground" style={{ fontWeight: 300 }}>
           Join 500+ SMBs already building their AI search presence with GEO AI.
         </p>
-        <Button asChild size="lg" className="rounded-full px-10 text-base glow-blue">
-          <a href="/signup">
-            Get Early Access -- It's Free <ArrowRight className="ml-1 h-4 w-4" />
+        <Button asChild size="lg" className="rounded-full px-10 text-base shadow-[0_0_20px_rgba(37,99,235,0.4)] bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-[0_0_35px_rgba(37,99,235,0.6)] hover:scale-[1.02] border border-blue-500/50 transition-all duration-300 h-14">
+          <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">
+            Book a Demo <ArrowRight className="ml-2 h-5 w-5" />
           </a>
         </Button>
-        <p className="mt-4 text-xs text-muted-foreground">
-          No credit card required · Takes 5 minutes · Cancel anytime
+        <p className="mt-4 text-xs text-muted-foreground/80 font-medium">
+          Talk to our team · Find out how much traffic you are losing to AI search
         </p>
       </div>
     </section>
