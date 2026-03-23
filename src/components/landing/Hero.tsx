@@ -27,19 +27,18 @@ const Hero = () => {
           The AI Search Revolution Is Here
         </div>
 
-        {/* H1 */}
         <h1 className="mb-6 text-5xl leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-[5rem] animate-fade-in font-extrabold" style={{ animationDelay: "0.1s" }}>
           <span className="block bg-gradient-to-br from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent pb-2">
-            Turn AI searches
+            More inbound leads.
           </span>
           <span className="block bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent drop-shadow-sm pb-2">
-            into inbound leads.
+            From Google and AI search.
           </span>
         </h1>
 
         {/* Subheadline */}
         <p className="mx-auto mb-12 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          Lucato AI deploys 8 specialized agents to make your business the definitive answer on ChatGPT, Perplexity, Gemini, and Google.
+          Lucato AI deploys 8 specialized AI agents to make your business the definitive answer on ChatGPT, Perplexity, Gemini, and Google. We don't give you a tool. We do the work.
         </p>
 
         {/* CTA row */}

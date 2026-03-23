@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div>
             <a href="/" className="inline-block text-lg font-bold text-foreground">
-              <img src="/logo.png" alt="Lucato AI Logo" className="h-10 sm:h-12 w-auto object-contain dark:invert" />
+              <img src="/logo.png" alt="Lucato AI Logo" className="h-5 sm:h-6 w-auto object-contain dark:invert" />
             </a>
             <p className="mt-1 text-xs text-muted-foreground">Your business, recommended by AI.</p>
           </div>
