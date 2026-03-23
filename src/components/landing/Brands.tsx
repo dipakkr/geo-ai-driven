@@ -10,10 +10,10 @@ const Brands = () => {
           }`}
       >
         <p className="mb-8 text-sm font-medium text-muted-foreground uppercase tracking-widest">
-          Trusted by forward-thinking brands
+          Trusted by Brands
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-20 opacity-70 grayscale transition-all hover:grayscale-0">
+        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-20">
 
           {/* AtoZ */}
           <div className="flex items-center transition-transform hover:scale-105 duration-300">
