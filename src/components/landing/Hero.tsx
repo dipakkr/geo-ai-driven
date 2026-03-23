@@ -28,10 +28,10 @@ const Hero = () => {
         </div>
 
         <h1 className="mb-6 text-5xl leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-[5rem] animate-fade-in font-extrabold" style={{ animationDelay: "0.1s" }}>
-          <span className="block bg-gradient-to-br from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent pb-2">
+          <span className="block bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent drop-shadow-sm pb-2">
             More inbound leads.
           </span>
-          <span className="block bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent drop-shadow-sm pb-2">
+          <span className="block bg-gradient-to-br from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent pb-2">
             From Google and AI search.
           </span>
         </h1>
