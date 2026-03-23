@@ -16,7 +16,7 @@ const FinalCTA = () => {
           Stop being invisible to AI. Start being recommended.
         </h2>
         <p className="mb-10 text-base text-muted-foreground" style={{ fontWeight: 300 }}>
-          Join 500+ SMBs already building their AI search presence with GEO AI.
+          Join 500+ forward-thinking businesses already building their AI search presence with Lucato AI.
         </p>
         <Button asChild size="lg" className="rounded-full px-10 text-base shadow-[0_0_20px_rgba(37,99,235,0.4)] bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-[0_0_35px_rgba(37,99,235,0.6)] hover:scale-[1.02] border border-blue-500/50 transition-all duration-300 h-14">
           <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">

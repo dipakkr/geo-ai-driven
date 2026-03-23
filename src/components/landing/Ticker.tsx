@@ -3,7 +3,7 @@ const items = [
   "ChatGPT has 400M weekly users",
   "Perplexity growing 300% YoY",
   "60% of software spend via AI agents by 2030 (Goldman Sachs)",
-  "GEO is the new SEO",
+  "Lucato is the new SEO",
 ];
 
 const Ticker = () => {

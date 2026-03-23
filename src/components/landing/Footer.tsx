@@ -4,8 +4,8 @@ const Footer = () => {
       <div className="mx-auto max-w-5xl">
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div>
-            <a href="/" className="text-lg font-bold text-foreground">
-              GEO<span className="text-primary">.</span>AI
+            <a href="/" className="inline-block text-lg font-bold text-foreground">
+              <img src="/logo.png" alt="Lucato AI Logo" className="h-10 sm:h-12 w-auto object-contain dark:invert" />
             </a>
             <p className="mt-1 text-xs text-muted-foreground">Your business, recommended by AI.</p>
           </div>
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-border/50 pt-6 text-center text-xs text-muted-foreground">
-          &copy; 2025 GEO AI -- Built for the AI-first web.
+          &copy; 2025 Lucato AI -- Built for the AI-first web.
         </div>
       </div>
     </footer>

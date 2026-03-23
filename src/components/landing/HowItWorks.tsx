@@ -4,7 +4,7 @@ const steps = [
   {
     num: "01",
     title: "Connect",
-    desc: "Tell GEO AI about your business. Upload your existing content, describe your customers, share your website URL. Cortex ingests everything and builds your business profile in minutes.",
+    desc: "Tell Lucato AI about your business. Upload your existing content, describe your customers, share your website URL. Cortex ingests everything and builds your business profile in minutes.",
   },
   {
     num: "02",

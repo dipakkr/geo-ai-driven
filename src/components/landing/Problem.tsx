@@ -14,7 +14,7 @@ const cards = [
   {
     icon: "⏱️",
     title: "The rules change faster than you can keep up",
-    body: "OpenAI, Google, and Perplexity update how they crawl and cite content on a near-weekly basis. No SMB team has the bandwidth to adapt manually, and falling behind compounds quickly.",
+    body: "OpenAI, Google, and Perplexity update how they crawl and cite content on a near-weekly basis. No in-house team has the bandwidth to adapt manually, and falling behind compounds quickly.",
   },
 ];
 

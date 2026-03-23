@@ -17,7 +17,7 @@ const Solution = () => {
           One platform. Eight agents working while you sleep.
         </h2>
         <p className="mb-14 max-w-3xl text-base text-muted-foreground" style={{ fontWeight: 300 }}>
-          GEO AI deploys a fleet of specialized agents, each one owning a different job. Together they build, optimize, publish, and monitor your AI search presence automatically. Set it up once. Let it compound.
+          Lucato AI deploys a fleet of specialized agents, each one owning a different job. Together they build, optimize, publish, and monitor your AI search presence automatically. Set it up once. Let it compound.
         </p>
 
         {/* Pipeline diagram */}

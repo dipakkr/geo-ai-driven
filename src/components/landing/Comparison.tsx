@@ -2,13 +2,13 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Check, X } from "lucide-react";
 
 const features = [
-  { label: "Optimized for AI agents (GEO)", seo: false, diy: false, geo: true },
+  { label: "Optimized for AI agents (Lucato)", seo: false, diy: false, geo: true },
   { label: "Publishes 100s of pages automatically", seo: false, diy: false, geo: true },
   { label: "Adapts to algorithm changes in real time", seo: false, diy: false, geo: true },
   { label: "Works 24/7 without your input", seo: false, diy: false, geo: true },
   { label: "Schema + llms.txt + structured data", seo: "partial", diy: false, geo: true },
   { label: "Competitive intelligence built in", seo: false, diy: false, geo: true },
-  { label: "Affordable for SMBs", seo: false, diy: true, geo: true },
+  { label: "Cost-effective at scale", seo: false, diy: true, geo: true },
 ];
 
 const Cell = ({ value }: { value: boolean | string }) => {
@@ -38,7 +38,7 @@ const Comparison = () => {
                 <th className="px-5 py-4 text-left text-xs font-medium uppercase tracking-widest text-muted-foreground">Feature</th>
                 <th className="px-5 py-4 text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">Traditional SEO</th>
                 <th className="px-5 py-4 text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">DIY Content</th>
-                <th className="px-5 py-4 text-center text-xs font-medium uppercase tracking-widest text-primary">GEO AI</th>
+                <th className="px-5 py-4 text-center text-xs font-medium uppercase tracking-widest text-primary">Lucato AI</th>
               </tr>
             </thead>
             <tbody>

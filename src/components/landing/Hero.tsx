@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown, Sparkles } from "lucide-react";
+import { ArrowRight, ChevronDown, Sparkles, MessageSquare, Bot, Zap, CheckCircle2 } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -28,20 +28,18 @@ const Hero = () => {
         </div>
 
         {/* H1 */}
-        <h1 className="mb-6 text-4xl leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-[4.5rem] animate-fade-in font-extrabold" style={{ animationDelay: "0.1s" }}>
-          <span className="block text-muted-foreground/80 font-semibold mb-2">More inbound leads.</span>
-          <span className="block bg-gradient-to-br from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent">
-            From the AI searches your
+        <h1 className="mb-6 text-5xl leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-[5rem] animate-fade-in font-extrabold" style={{ animationDelay: "0.1s" }}>
+          <span className="block bg-gradient-to-br from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent pb-2">
+            Turn AI searches
           </span>
-          <span className="block bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent drop-shadow-sm">
-            customers are already making.
+          <span className="block bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent drop-shadow-sm pb-2">
+            into inbound leads.
           </span>
         </h1>
 
         {/* Subheadline */}
         <p className="mx-auto mb-12 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          GEO AI deploys 8 specialized agents that work 24/7 to make your business
-          the answer on ChatGPT, Perplexity, Gemini, and Google.
+          Lucato AI deploys 8 specialized agents to make your business the definitive answer on ChatGPT, Perplexity, Gemini, and Google.
         </p>
 
         {/* CTA row */}
@@ -64,25 +62,32 @@ const Hero = () => {
       <div className="relative z-10 mx-auto mt-20 w-full max-w-4xl animate-fade-in" style={{ animationDelay: "0.5s" }}>
         <div className="rounded-2xl border border-white/10 bg-card/40 p-8 shadow-2xl shadow-blue-900/5 backdrop-blur-xl sm:p-12">
           <p className="mb-8 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">How it works</p>
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-0 sm:justify-between">
+          <div className="flex flex-col items-center gap-8 sm:flex-row sm:gap-0 sm:justify-between px-4 sm:px-0 relative">
             {[
-              { icon: "💬", label: "Buyer asks ChatGPT" },
-              { icon: "🤖", label: "AI crawls the web" },
-              { icon: "⚡", label: "GEO-optimized page found" },
-              { icon: "✅", label: "Your business recommended" },
+              { icon: <MessageSquare className="h-6 w-6 text-blue-500" />, label: "Buyer asks ChatGPT" },
+              { icon: <Bot className="h-6 w-6 text-indigo-500" />, label: "AI crawls the web" },
+              { icon: <Zap className="h-6 w-6 text-yellow-500" />, label: "Lucato-optimized page found" },
+              { icon: <CheckCircle2 className="h-6 w-6 text-green-500" />, label: "Your business recommended" },
             ].map((step, i) => (
-              <div key={step.label} className="flex items-center gap-3 sm:flex-col sm:gap-3 sm:text-center">
+              <div key={step.label} className="flex relative z-10 w-full items-center gap-4 sm:flex-col sm:gap-4 sm:w-1/4 sm:text-center group">
                 <div
-                  className="flex h-14 w-14 items-center justify-center rounded-xl border border-primary/20 bg-gradient-to-b from-primary/10 to-transparent text-xl shadow-sm transition-transform duration-300 hover:scale-110 hover:-translate-y-0.5"
+                  className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/20 dark:border-white/10 bg-card/60 shadow-xl shadow-blue-900/5 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_8px_30px_rgb(37,99,235,0.15)] group-hover:border-blue-500/30 backdrop-blur-md relative"
                 >
                   {step.icon}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 </div>
-                <span className="text-xs font-medium text-muted-foreground sm:max-w-[100px]">{step.label}</span>
+                <span className="text-sm font-medium text-foreground sm:max-w-[120px] leading-tight transition-colors duration-300 group-hover:text-blue-500">{step.label}</span>
+                
+                {/* Desktop Connectors */}
                 {i < 3 && (
-                  <div className="hidden items-center sm:flex">
-                    <div className="h-px w-8 bg-gradient-to-r from-primary/40 to-primary/10 md:w-12" />
-                    <div className="h-1.5 w-1.5 rounded-full bg-primary/30" />
+                  <div className="hidden sm:block absolute top-8 left-[50%] w-[100%] h-px bg-gradient-to-r from-blue-500/20 via-indigo-500/20 to-blue-500/20 -z-10">
+                    <div className="absolute top-1/2 left-0 h-[2px] w-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-transparent transition-all duration-1000 group-hover:w-full" style={{ transform: 'translateY(-50%)' }} />
                   </div>
+                )}
+                
+                {/* Mobile Connectors */}
+                {i < 3 && (
+                  <div className="sm:hidden absolute left-8 top-16 bottom-[-32px] w-px bg-gradient-to-b from-blue-500/20 to-transparent -z-10" />
                 )}
               </div>
             ))}

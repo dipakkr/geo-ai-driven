@@ -17,7 +17,7 @@ const InvestorStrip = () => {
         The shift from search engines to AI agents is happening right now.
       </h3>
       <p className="mx-auto mb-8 max-w-2xl text-sm text-muted-foreground" style={{ fontWeight: 300 }}>
-        Traditional SEO is an $80B industry built on a model that AI is actively disrupting. GEO AI is infrastructure for the next decade of discoverability, starting with 35 million SMBs in the US alone who have no solution for AI search. We're early and the window is open.
+        Traditional SEO is an $80B industry built on a model that AI is actively disrupting. Lucato AI is infrastructure for the next decade of discoverability, starting with 35 million local and forward-thinking businesses in the US alone who have no solution for AI search. We're early and the window is open.
       </p>
       <Button asChild variant="outline" className="rounded-full px-6">
         <a href="/signup">
