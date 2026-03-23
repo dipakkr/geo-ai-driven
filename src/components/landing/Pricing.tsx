@@ -4,40 +4,42 @@ import { ArrowRight } from "lucide-react";
 
 const tiers = [
   {
-    name: "Starter",
+    name: "Launch",
     price: "$499",
     popular: false,
     features: [
-      "1 business profile",
-      "4 agents active (Scout, Blueprint, Forge, Signal)",
-      "Up to 50 pages/month",
-      "Monthly performance report",
+      "AI Hub — up to 100 pages",
+      "10 authority backlinks",
+      "All 8 AI agents included",
+      "Lead tracking dashboard",
+      "Monthly insights report",
+      "Email support",
     ],
   },
   {
-    name: "Growth",
+    name: "Grow",
     price: "$999",
     popular: true,
     features: [
-      "1 business profile",
-      "All 8 agents active",
-      "Up to 200 pages/month",
-      "Weekly performance reports",
-      "Competitor tracking (up to 5 competitors)",
-      "Priority support",
+      "AI Hub — up to 200 pages",
+      "20 authority backlinks",
+      "Buyer journey tracking on leads",
+      "Spam & bot filtering",
+      "Weekly performance insights",
+      "Email + Slack support",
     ],
   },
   {
     name: "Scale",
-    price: "$2,499",
+    price: "$1,799",
     popular: false,
     features: [
-      "Up to 3 business profiles",
-      "All 8 agents, full autonomy",
-      "Unlimited pages",
-      "Daily monitoring and auto-rewrites",
-      "White-glove onboarding",
-      "Dedicated account agent",
+      "AI Hub — up to 400 pages",
+      "40 authority backlinks",
+      "Accelerated content refreshes",
+      "Custom reporting dashboards",
+      "Quarterly strategy reviews",
+      "Dedicated priority support",
     ],
   },
 ];
@@ -62,7 +64,7 @@ const Pricing = () => {
               className={`relative flex flex-col rounded-3xl border p-8 transition-all duration-500 hover:-translate-y-2 ${
                 tier.popular
                   ? "border-blue-500 bg-blue-500/5 shadow-[0_0_30px_rgba(37,99,235,0.15)] ring-1 ring-blue-500/50"
-                  : "border-white/10 dark:border-white/5 bg-card/40 backdrop-blur-xl shadow-xl shadow-blue-900/5"
+                  : "border-border bg-card/40 backdrop-blur-xl shadow-xl shadow-blue-900/5"
               } ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
               style={{ transitionDelay: `${i * 120}ms` }}
             >
@@ -88,9 +90,9 @@ const Pricing = () => {
                 asChild
                 variant={tier.popular ? "default" : "outline"}
                 className={`w-full rounded-full h-12 text-base font-medium transition-all duration-300 ${
-                  tier.popular 
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] text-white border-0 hover:scale-[1.02]" 
-                  : "border-white/10 hover:bg-secondary/50 dark:border-white/5"
+                  tier.popular
+                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] text-white border-0 hover:scale-[1.02]"
+                  : "hover:bg-secondary/50"
                 }`}
               >
                 <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">

@@ -12,12 +12,13 @@ const Footer = () => {
 
           <div className="flex flex-wrap gap-x-10 gap-y-4 text-sm text-muted-foreground">
             <div className="flex flex-col gap-2">
-              <a href="#how-it-works" className="transition-colors hover:text-foreground">Product</a>
-              <a href="#agents" className="transition-colors hover:text-foreground">Agents</a>
-              <a href="#pricing" className="transition-colors hover:text-foreground">Pricing</a>
+              <a href="/#how-it-works" className="transition-colors hover:text-foreground">Product</a>
+              <a href="/#agents" className="transition-colors hover:text-foreground">Agents</a>
+              <a href="/#pricing" className="transition-colors hover:text-foreground">Pricing</a>
             </div>
             <div className="flex flex-col gap-2">
-              <a href="#" className="transition-colors hover:text-foreground">Blog</a>
+              <a href="/ai-consulting-cost" className="transition-colors hover:text-foreground">AI Consulting Cost</a>
+              <a href="/ai-strategy-guide" className="transition-colors hover:text-foreground">AI Strategy Guide</a>
               <a href="#" className="transition-colors hover:text-foreground">Contact</a>
             </div>
             <div className="flex flex-col gap-2">

@@ -59,34 +59,31 @@ const Hero = () => {
 
       {/* Flow diagram */}
       <div className="relative z-10 mx-auto mt-20 w-full max-w-4xl animate-fade-in" style={{ animationDelay: "0.5s" }}>
-        <div className="rounded-2xl border border-white/10 bg-card/40 p-8 shadow-2xl shadow-blue-900/5 backdrop-blur-xl sm:p-12">
-          <p className="mb-8 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">How it works</p>
+        <div className="rounded-2xl border border-border bg-card/40 p-8 shadow-2xl shadow-blue-900/5 backdrop-blur-xl sm:p-12">
+          <p className="mb-10 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">How it works</p>
           <div className="flex flex-col items-center gap-8 sm:flex-row sm:gap-0 sm:justify-between px-4 sm:px-0 relative">
             {[
-              { icon: <MessageSquare className="h-6 w-6 text-blue-500" />, label: "Buyer asks ChatGPT" },
-              { icon: <Bot className="h-6 w-6 text-indigo-500" />, label: "AI crawls the web" },
-              { icon: <Zap className="h-6 w-6 text-yellow-500" />, label: "Lucato-optimized page found" },
-              { icon: <CheckCircle2 className="h-6 w-6 text-green-500" />, label: "Your business recommended" },
+              { icon: <MessageSquare className="h-5 w-5 text-blue-500" />, label: "Buyer asks ChatGPT" },
+              { icon: <Bot className="h-5 w-5 text-indigo-500" />, label: "AI crawls the web" },
+              { icon: <Zap className="h-5 w-5 text-amber-500" />, label: "Lucato-optimized page found" },
+              { icon: <CheckCircle2 className="h-5 w-5 text-green-500" />, label: "Your business recommended" },
             ].map((step, i) => (
               <div key={step.label} className="flex relative z-10 w-full items-center gap-4 sm:flex-col sm:gap-4 sm:w-1/4 sm:text-center group">
                 <div
-                  className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/20 dark:border-white/10 bg-card/60 shadow-xl shadow-blue-900/5 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_8px_30px_rgb(37,99,235,0.15)] group-hover:border-blue-500/30 backdrop-blur-md relative"
+                  className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-border bg-background shadow-sm transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-md group-hover:border-blue-500/30"
                 >
                   {step.icon}
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 </div>
                 <span className="text-sm font-medium text-foreground sm:max-w-[120px] leading-tight transition-colors duration-300 group-hover:text-blue-500">{step.label}</span>
-                
+
                 {/* Desktop Connectors */}
                 {i < 3 && (
-                  <div className="hidden sm:block absolute top-8 left-[50%] w-[100%] h-px bg-gradient-to-r from-blue-500/20 via-indigo-500/20 to-blue-500/20 -z-10">
-                    <div className="absolute top-1/2 left-0 h-[2px] w-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-transparent transition-all duration-1000 group-hover:w-full" style={{ transform: 'translateY(-50%)' }} />
-                  </div>
+                  <div className="hidden sm:block absolute top-7 left-[50%] w-[100%] h-px bg-border -z-10" />
                 )}
-                
+
                 {/* Mobile Connectors */}
                 {i < 3 && (
-                  <div className="sm:hidden absolute left-8 top-16 bottom-[-32px] w-px bg-gradient-to-b from-blue-500/20 to-transparent -z-10" />
+                  <div className="sm:hidden absolute left-7 top-14 bottom-[-32px] w-px bg-border -z-10" />
                 )}
               </div>
             ))}
