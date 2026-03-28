@@ -16,18 +16,18 @@ export default function Hero() {
         {/* Badge */}
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary animate-fade-in">
           <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-          AI search is replacing Google clicks
+          The AI Search Revolution Is Here
         </div>
 
         <h1
-          className="mb-6 text-5xl leading-[1.08] tracking-tight sm:text-6xl md:text-7xl font-extrabold animate-fade-in"
+          className="mb-6 text-5xl leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-[5rem] font-extrabold animate-fade-in"
           style={{ animationDelay: "0.1s" }}
         >
           <span className="block bg-gradient-to-r from-primary to-violet-400 bg-clip-text text-transparent pb-2">
-            Get discovered
+            More inbound leads.
           </span>
           <span className="block text-foreground">
-            by every AI engine.
+            From Google and AI search.
           </span>
         </h1>
 
@@ -35,9 +35,7 @@ export default function Hero() {
           className="mx-auto mb-12 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg animate-fade-in"
           style={{ animationDelay: "0.2s" }}
         >
-          Lucato deploys 8 autonomous agents that position your business as the
-          definitive answer across ChatGPT, Perplexity, Gemini, and Google. No
-          tools to learn. No content to write. We handle everything.
+          Lucato AI deploys 8 specialized AI agents to make your business the definitive answer on ChatGPT, Perplexity, Gemini, and Google. We don&apos;t give you a tool. We do the work.
         </p>
 
         {/* CTA */}
@@ -51,7 +49,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="group inline-flex h-12 items-center gap-2 rounded-lg bg-primary px-8 text-base font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30 hover:brightness-110"
           >
-            Start your free trial
+            Book a Demo
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
@@ -74,10 +72,10 @@ export default function Hero() {
           </p>
           <div className="flex flex-col items-center gap-6 sm:flex-row sm:gap-0 sm:justify-between relative">
             {[
-              { icon: <MessageSquare className="h-5 w-5 text-primary" />, label: "Buyer queries AI" },
-              { icon: <Bot className="h-5 w-5 text-violet-500" />, label: "AI scans the web" },
-              { icon: <Zap className="h-5 w-5 text-amber-500" />, label: "Finds your Lucato page" },
-              { icon: <CheckCircle2 className="h-5 w-5 text-emerald-500" />, label: "Recommends you" },
+              { icon: <MessageSquare className="h-5 w-5 text-primary" />, label: "Buyer asks ChatGPT" },
+              { icon: <Bot className="h-5 w-5 text-violet-500" />, label: "AI crawls the web" },
+              { icon: <Zap className="h-5 w-5 text-amber-500" />, label: "Lucato-optimized page found" },
+              { icon: <CheckCircle2 className="h-5 w-5 text-emerald-500" />, label: "Your business recommended" },
             ].map((step, i) => (
               <div
                 key={step.label}
