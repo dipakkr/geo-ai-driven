@@ -1,6 +1,8 @@
+"use client";
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const navLinks = [
   { label: "How it Works", href: "/#how-it-works" },
@@ -8,32 +10,37 @@ const navLinks = [
   { label: "Pricing", href: "/#pricing" },
 ];
 
-const Navbar = () => {
+export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/" className="flex items-center gap-1 text-xl font-bold tracking-tight text-foreground">
-          <img src="/logo.png" alt="Lucato AI Logo" className="h-5 sm:h-6 w-auto object-contain dark:invert" />
-        </a>
+        <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-foreground">
+          <img src="/logo.png" alt="Lucato AI" className="h-5 sm:h-6 w-auto object-contain dark:invert" />
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-normal text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
-        <div className="hidden md:block">
-          <Button asChild className="rounded-full px-6 bg-blue-600 hover:bg-blue-700 text-white shadow-[0_0_15px_rgba(37,99,235,0.3)] transition-all hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]">
-            <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">Book a Demo</a>
-          </Button>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://cal.com/lucato-demo/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 items-center justify-center rounded-lg bg-primary px-5 text-sm font-medium text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md"
+          >
+            Book a Demo
+          </a>
         </div>
 
         <button
@@ -41,7 +48,7 @@ const Navbar = () => {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
@@ -49,23 +56,26 @@ const Navbar = () => {
         <div className="border-t border-border/50 bg-background px-6 pb-6 pt-4 md:hidden">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <Button asChild className="mt-2 w-full rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-[0_0_15px_rgba(37,99,235,0.3)]">
-              <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">Book a Demo</a>
-            </Button>
+            <a
+              href="https://cal.com/lucato-demo/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex h-10 w-full items-center justify-center rounded-lg bg-primary text-sm font-medium text-primary-foreground"
+            >
+              Book a Demo
+            </a>
           </div>
         </div>
       )}
     </nav>
   );
-};
-
-export default Navbar;
+}

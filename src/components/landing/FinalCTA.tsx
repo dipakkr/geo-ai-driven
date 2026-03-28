@@ -1,8 +1,9 @@
+"use client";
+
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const FinalCTA = () => {
+export default function FinalCTA() {
   const { ref, isVisible } = useScrollReveal();
 
   return (
@@ -12,23 +13,26 @@ const FinalCTA = () => {
           isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
         }`}
       >
-        <h2 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-          Stop being invisible to AI. Start being recommended.
+        <h2 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+          Don't wait for AI to find your competitors first.
         </h2>
-        <p className="mb-10 text-base text-muted-foreground" style={{ fontWeight: 300 }}>
-          Join 500+ forward-thinking businesses already building their AI search presence with Lucato AI.
+        <p className="mb-10 text-base text-muted-foreground leading-relaxed">
+          Hundreds of forward-thinking businesses already use Lucato to own
+          their AI search presence. The window is closing fast.
         </p>
-        <Button asChild size="lg" className="rounded-full px-10 text-base shadow-[0_0_20px_rgba(37,99,235,0.4)] bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-[0_0_35px_rgba(37,99,235,0.6)] hover:scale-[1.02] border border-blue-500/50 transition-all duration-300 h-14">
-          <a href="https://cal.com/lucato-demo/30min" target="_blank" rel="noopener noreferrer">
-            Book a Demo <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
-        </Button>
-        <p className="mt-4 text-xs text-muted-foreground/80 font-medium">
-          Talk to our team · Find out how much traffic you are losing to AI search
+        <a
+          href="https://cal.com/lucato-demo/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex h-14 items-center gap-2 rounded-lg bg-primary px-10 text-base font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30 hover:brightness-110"
+        >
+          Start your free trial
+          <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5" />
+        </a>
+        <p className="mt-4 text-xs text-muted-foreground">
+          Talk to our team &middot; See how much traffic AI search can drive to your business
         </p>
       </div>
     </section>
   );
-};
-
-export default FinalCTA;
+}
