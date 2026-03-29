@@ -19,10 +19,6 @@ export default function Footer() {
               <Link href="/#pricing" className="transition-colors hover:text-foreground">Pricing</Link>
             </div>
             <div className="flex flex-col gap-2">
-              <Link href="/ai-consulting-cost" className="transition-colors hover:text-foreground">AI Consulting Cost</Link>
-              <Link href="/ai-strategy-guide" className="transition-colors hover:text-foreground">AI Strategy Guide</Link>
-            </div>
-            <div className="flex flex-col gap-2">
               <a href="#" className="transition-colors hover:text-foreground">Twitter/X</a>
               <a href="#" className="transition-colors hover:text-foreground">LinkedIn</a>
             </div>
