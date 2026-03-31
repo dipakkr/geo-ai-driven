@@ -22,12 +22,12 @@ const HowItWorks = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="how-it-works" ref={ref} className="px-6 py-24 md:py-32">
+    <section id="how-it-works" ref={ref} className="px-6 py-24 md:py-[100px] bg-[#fafafa]">
       <div className="mx-auto max-w-5xl">
-        <span className="mb-4 block text-xs font-medium uppercase tracking-widest text-primary">
+        <span className="section-label mb-6 block w-fit">
           How It Works
         </span>
-        <h2 className="mb-14 text-3xl sm:text-4xl md:text-5xl">
+        <h2 className="mb-14 text-3xl sm:text-4xl md:text-5xl font-heading text-[#0a0a0a]">
           Up and running in 3 steps.
         </h2>
 
@@ -40,11 +40,11 @@ const HowItWorks = () => {
               }`}
               style={{ transitionDelay: `${i * 150}ms` }}
             >
-              <span className="mb-4 inline-block text-4xl font-bold text-primary/20">
+              <span className="mb-4 inline-block text-5xl font-heading text-[#1483F3]/15">
                 {step.num}
               </span>
-              <h3 className="mb-3 text-xl font-bold">{step.title}</h3>
-              <p className="text-sm text-muted-foreground" style={{ fontWeight: 300 }}>{step.desc}</p>
+              <h3 className="mb-3 text-xl font-medium text-[#0a0a0a]">{step.title}</h3>
+              <p className="text-sm text-[#6f6f6f] leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>
