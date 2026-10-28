@@ -29,7 +29,7 @@ export default function Brands() {
         }`}
       >
         <p className="mb-8 text-xs font-medium text-muted-foreground uppercase tracking-widest">
-          Trusted by 26 companies across climate tech, hospitality and manufacturing
+          Trusted by 50+ companies across climate tech, hospitality and manufacturing
         </p>
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16">
           {brands.map((brand) => (
