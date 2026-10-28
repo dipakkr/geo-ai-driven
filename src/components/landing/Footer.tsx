@@ -18,14 +18,6 @@ export default function Footer() {
               <Link href="/#agents" className="transition-colors hover:text-foreground">Agents</Link>
               <Link href="/#pricing" className="transition-colors hover:text-foreground">Pricing</Link>
             </div>
-            <div className="flex flex-col gap-2">
-              <a href="#" className="transition-colors hover:text-foreground">Twitter/X</a>
-              <a href="#" className="transition-colors hover:text-foreground">LinkedIn</a>
-            </div>
-            <div className="flex flex-col gap-2">
-              <a href="#" className="transition-colors hover:text-foreground">Privacy</a>
-              <a href="#" className="transition-colors hover:text-foreground">Terms</a>
-            </div>
           </div>
         </div>
 

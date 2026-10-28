@@ -36,18 +36,20 @@ export default function Problem() {
         <div className="mb-14 max-w-4xl mx-auto rounded-2xl border border-border bg-card/60 p-8 sm:p-10 backdrop-blur-sm">
           <div className="flex flex-col gap-5 text-base text-muted-foreground leading-relaxed">
             <p>
-              A logistics company needs warehouse liability coverage. The
-              founder doesn't open Google — she types into ChatGPT:
+              A mid-sized manufacturer in Bavaria has to report its carbon
+              footprint next quarter. The sustainability lead doesn't open
+              Google — she types into ChatGPT:
             </p>
             <div className="relative rounded-xl bg-secondary/60 p-5 text-foreground font-medium italic border border-border/50">
               <div className="absolute -top-3 -left-3 rounded-full bg-primary p-2 text-white shadow-lg shadow-primary/25">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
               </div>
-              &ldquo;Best commercial property insurance for a small logistics company in Texas?&rdquo;
+              &ldquo;Best carbon-accounting software for a 200-person German manufacturer?&rdquo;
             </div>
             <p>
-              AI scans hundreds of pages and surfaces three providers — all
-              before she opens a browser tab.
+              AI scans hundreds of pages and surfaces three vendors — all
+              before she opens a browser tab. The climate-tech company that
+              isn't on that list never gets the call.
             </p>
             <p className="font-medium text-foreground py-3 px-4 border-l-2 border-primary bg-primary/5 rounded-r-lg">
               The decision happens upstream of the click. If your business
